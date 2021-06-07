@@ -36,8 +36,6 @@ function capSentence(text) {
   return capsArray.join(' ')
 }
 
-function capSentence(text) {
-  // Code goes here
-}
+
 
 module.exports = capSentence
