@@ -45,7 +45,16 @@ function longestWord(text) {
     return result
 }
 
+//sort() method
 
+function longestWord(text) {
+    //turn string into an array
+    let sortedArray = text.split(' ')
+                            //sort in descending order from longest word to shortest word
+                            .sort((wordA, wordB) => wordB.length - wordA.length)
+    //return the first index containing the longest word (since it is in descending order)
+    return sortedArray[0]
+}
 
 
 
