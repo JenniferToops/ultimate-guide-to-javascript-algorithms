@@ -10,7 +10,7 @@ function hammingDistance(stringA, stringB) {
     if (stringA.length == stringB.length) {
 
         for (let i = 0; i < stringA.length; i++) {
-            if (stringA++[++i].toLowerCase() != stringB++[++i].toLowerCase()) {
+            if (stringA[i].toLowerCase() != stringB[i].toLowerCase()) { 
                 result++
             }
         }

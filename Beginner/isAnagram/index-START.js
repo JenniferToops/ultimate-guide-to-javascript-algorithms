@@ -5,6 +5,8 @@ don't. E.g
     isAnagram('silent', 'listen') // should return true
 */
 
+/*The faster implementation is the Character Map Comparison approach and the Direct Comparison method though concise is approximately 52% slower.*/
+
 
 function isAnagram(stringA, stringB) {
     //create an anonymous function that will split the string into an array, then remove digits and characters and only leave undercase letters which are sorted in ascending order and then joined back into a string
