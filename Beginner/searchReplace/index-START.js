@@ -20,3 +20,5 @@ function searchReplace(str, word, newWord) {
     //otherwise (index 0 character for the word we are replacing is not capitalized)
     return str.replace(regex, newWord)
 }
+
+module.exports = searchReplace
