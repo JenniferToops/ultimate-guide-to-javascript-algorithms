@@ -27,4 +27,26 @@ function longestWord(text) {
 }
 
 
+//reduce() method
+
+function longestWord(text) {
+    //declare the result to point to the word array created by text.split(), which is reduced down to the currentWord whose length is greater than the accumulated maximumWord length value
+    var result = text.split(' ').reduce((maxLengthWord, currentWord) => {
+        if (currentWord.length > maxLengthWord.length) {
+            //if the current word length is greater than the maxLengthWord length, return the current word 
+            return currentWord
+        } else {
+            //otherwise, return the maxLengthWord
+            return maxLengthWord
+        }
+        //be sure to provide the initial value of empty element
+    }, "")
+    //return the result of these chained methods
+    return result
+}
+
+
+
+
+
 module.exports = longestWord
